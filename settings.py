@@ -1,4 +1,4 @@
-# Django settings for innasite project.
+# Django settings for kisele project.
 import os
 gettext = lambda s: s
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
@@ -109,10 +109,10 @@ MIDDLEWARE_CLASSES = (
     'cms.middleware.toolbar.ToolbarMiddleware',
 )
 
-ROOT_URLCONF = 'innasite.urls'
+ROOT_URLCONF = 'kisele.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'innasite.wsgi.application'
+WSGI_APPLICATION = 'kisele.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -146,7 +146,7 @@ INSTALLED_APPS = (
     'south',
     'sekizai',
     'cms.plugins.text',
-    'innasite',
+    'kisele',
 )
 
 # A sample logging configuration. The only tangible logging
