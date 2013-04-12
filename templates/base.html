@@ -1,0 +1,16 @@
+{% load cms_tags sekizai_tags %}
+<html>
+  <head>
+      {% render_block "css" %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}bootstrap/css/bootstrap-responsive.css">
+  </head>
+  <body>
+      {% cms_toolbar %}
+      {% placeholder base_content %}
+      <div class='container'>
+      {% block base_content %}{% endblock %}
+      </div>
+      {% render_block "js" %}
+  </body>
+</html>
