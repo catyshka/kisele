@@ -1,0 +1,10 @@
+{% extends "two_columns.html" %}
+{% load cms_tags menu_tags %}
+
+{% block left_bar %}
+    {% load menu_tags %}
+    {% show_menu_below_id "articles" 0 100 100 100 "menu/left_menu.html"%}
+{% endblock %}
+{% block main_bar %}
+    {% page_attribute "page_title" %}
+{% endblock %}
