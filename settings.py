@@ -1,5 +1,7 @@
 # Django settings for kisele project.
 import os
+from django.utils.translation import ugettext_lazy as _
+
 gettext = lambda s: s
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 
@@ -127,8 +129,13 @@ TEMPLATE_DIRS = (
 CMS_TEMPLATES = (
     ('template_1.html', 'Template One'),
     ('template_2.html', 'Template Two'),
+    ('index.html', 'Main Page'),
+    ('gallery.html', 'Gallery'),
+    ('articles.html', 'Articles'),
 )
-
+# GALLERY_TEMPLATES = (
+#     ('djangocms_gallery/default.html', _('default')),
+# )
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -147,6 +154,10 @@ INSTALLED_APPS = (
     'sekizai',
     'cms.plugins.text',
     'kisele',
+    'gallery',
+#     'filer',
+#     'easy_thumbnails',
+#     'djangocms_gallery',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -191,7 +202,18 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 LANGUAGES = [
     ('en', 'English'),
 ]
+# CMS_MENU_TITLE_OVERWRITE = True
+# 
+# THUMBNAIL_PROCESSORS = (
+#     'easy_thumbnails.processors.colorspace',
+#     'easy_thumbnails.processors.autocrop',
+#     #'easy_thumbnails.processors.scale_and_crop',
+#     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
+#     'easy_thumbnails.processors.filters',
+# )
 
+THUMBNAIL_DEBUG = True
+FILER_DEBUG = True
 
 try:
     from local_settings import *
