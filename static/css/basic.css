@@ -11,6 +11,9 @@ html, body {
     position: relative;
     /*padding: 0 0 25px 0;*/
 }
+.header-title {
+    color: #a67c0a;
+}
 .footer {
     position: absolute;
     bottom: 0;
@@ -20,12 +23,35 @@ html, body {
     padding: 0;
 }
 .main-block {
-    border: 4px solid #EEB4B4;
-    border-radius: 7px;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
     background-color: #fff;
-    height: 170px;
+    height: 200px;
+    position: relative;
+}
+.main-block-tansparent{
+    background-color: #2B1F1F;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+}
+.main-block-title {
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    color: #FDF5E6;
+    padding: 10px;
+    font-size: 16px;
+    font-style: italic;
+}
+.main-block-image {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
 input, fieldset, legend {
     border-radius: 7px;
@@ -33,16 +59,21 @@ input, fieldset, legend {
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
 }
-.showcase {
-    height: 250px;
-    background: #FFF url("/static/images/roses_white_2.jpg") repeat left top;
+.showcase-block {
+    height: 350px;
+    /*background: #FFF url("/static/images/roses_white_2.jpg") repeat left top;*/
     margin: 20px 0;
     border-radius: 34px;
 }
+.showcase {
+    height: 320px;
+    overflow: hidden;
+}
 .phone {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     padding: 10px 10px 0 0;
+    color: #2B1F1F;
 }
 .header {
 }
@@ -66,18 +97,20 @@ input, fieldset, legend {
     background-color: #fff;
 }
 .navbar-inner {
-    background-color: #8B5742;
+    background-color: #2B1F1F;
     background-image: none;
     background-repeat: repeat-x;
-    border: 0 solid #8B5742;
+    border: 0 solid #2B1F1F;
     border-radius: 7px;
     box-shadow: none;
     min-height: 40px;
 }
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
-    background-color: #8B5742;
+    background-color: #2B1F1F;
+    border: 0 solid #2B1F1F;
+    border-radius: 7px;
     box-shadow: none;
-    color: #FDF5E6;
+    color: #e7ddc2;
     text-decoration: underline;
 }
 .navbar .nav > li > a {
