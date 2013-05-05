@@ -7,4 +7,13 @@
 {% endblock %}
 {% block main_bar %}
     {% page_attribute "page_title" %}
+    {% for page in request.current_page.get_children %}
+        {% if page.published %}
+            <div class="article-item">
+                <div class="article-item-title">{% page_attribute "title" page %}</div>
+                <div class="article-item-text">{% show_placeholder "content" page.id None None 300 %}<span class="arrow-block">&nbsp;...</span></div>
+            </div>
+        {% endif%}
+    {% endfor %}
+    {% placeholder content %}
 {% endblock %}

@@ -5,19 +5,11 @@ html, body {
     /*background-color: #ffba9c;
     background: #FFF url("/static/images/roses_white_2.jpg") repeat left top;*/
 }
-.main-container {
+#wrap {
     min-height: 100%;
-    height: 100%;
-    position: relative;
-    /*padding: 0 0 25px 0;*/
 }
 .header-title {
     color: #a67c0a;
-}
-.footer {
-    position: absolute;
-    bottom: 0;
-    height: 25px;
 }
 .navbar .navbar-inner {
     padding: 0;
@@ -81,7 +73,6 @@ input, fieldset, legend {
     font-size: 40px;
     font-weight: 700;
     padding: 10px 10px 0 0;
-    color: #CD5555;
 }
 .plain-gallery .image-block {
     float: left;
@@ -138,8 +129,21 @@ input, fieldset, legend {
     padding: 5px 5px;
     text-decoration: none;
     text-shadow: none;
-    color: #CD5555;
+    color: #000;
+    display: block;
 }
 .navbar-left .nav-left > .active > a, .navbar-left .nav-left > .active > a:hover, .navbar-left .nav-left > .active > a:focus {
     text-decoration: underline;
+    color: #A67C0A;
+    /*background: url("/static/images/arrow.png") no-repeat scroll right 1px transparent;*/
+}
+.arrow-block {
+    background: url("/static/images/arrow.png") no-repeat scroll right 1px transparent;
+    padding: 0 15px 0 0;
+}
+.navbar-left-inner {
+    margin: 0 0 0 20px;
+}
+.article-item-title {
+    color: #A67C0A;
 }
