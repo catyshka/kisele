@@ -77,6 +77,10 @@ input, fieldset, legend {
 .plain-gallery .image-block {
     float: left;
     padding: 10px 20px;
+    width: 300px;
+}
+.plain-gallery .image-block img {
+    width: 250px;
 }
 .plain-gallery-photo {
     height: 100px;
@@ -101,6 +105,10 @@ input, fieldset, legend {
     border: 0 solid #2B1F1F;
     border-radius: 7px;
     box-shadow: none;
+    color: #A67C0A;
+    text-decoration: underline;
+}
+.navbar .nav > li > a:hover, .navbar .nav > li > a:focus {
     color: #e7ddc2;
     text-decoration: underline;
 }
@@ -134,7 +142,7 @@ input, fieldset, legend {
 }
 .navbar-left .nav-left > .active > a, .navbar-left .nav-left > .active > a:hover, .navbar-left .nav-left > .active > a:focus {
     text-decoration: underline;
-    color: #A67C0A;
+    color: #A67C0A;;
     /*background: url("/static/images/arrow.png") no-repeat scroll right 1px transparent;*/
 }
 .arrow-block {
@@ -144,6 +152,25 @@ input, fieldset, legend {
 .navbar-left-inner {
     margin: 0 0 0 20px;
 }
+.article-item {
+	padding: 10px 0;
+}
 .article-item-title {
     color: #A67C0A;
+}
+.article-item-text a {
+	color: #000;
+	text-decoration: none;
+}
+.article-item-text a:hover {
+	text-decoration: underline;
+}
+.article-item-title a {
+	color: #A67C0A;
+	text-decoration: none;
+}
+.article-title {
+	color: #A67C0A;
+	font-size: 150%;
+	padding: 10px 20px;
 }

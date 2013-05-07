@@ -5,23 +5,28 @@
         <link rel="stylesheet" href="{{ STATIC_URL }}bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="{{ STATIC_URL }}bootstrap/css/bootstrap-responsive.css">
         <link rel="stylesheet" href="{{ STATIC_URL }}css/basic.css?v=1">
-        <link rel="stylesheet" href="{{ STATIC_URL }}colorbox/colorbox.css?v=1">
         
-        <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}tn3/skins/tn3/tn3.css"></link>
-        <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}mediaelement/mediaelementplayer.css"></link>
-        
-        <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.9.1.js"></script>
-        <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.corner.js"></script>
-        
+        <!-- 
         <script type="text/javascript" src="{{ STATIC_URL }}colorbox/jquery.colorbox.js"></script>
+        <link rel="stylesheet" href="{{ STATIC_URL }}colorbox/colorbox.css?v=1">-->
         
-        <script type="text/javascript" src="{{ STATIC_URL }}mediaelement/mediaelement-and-player.min.js" type="text/javascript"></script>
+        <!-- <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}tn3/skins/tn3/tn3.css"></link>
+        <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}mediaelement/mediaelementplayer.css"></link> -->
+        
+        <script type="text/javascript" src="{{ STATIC_URL }}/lightbox/js/jquery-1.7.2.min.js"></script>
+        
+        <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.corner.js"></script>
+
+        <script type="text/javascript" src="{{ STATIC_URL }}/lightbox/js/lightbox.js"></script>
+        <link href="{{ STATIC_URL }}/lightbox/css/lightbox.css" rel="stylesheet" />
+        
+        <!-- <script type="text/javascript" src="{{ STATIC_URL }}mediaelement/mediaelement-and-player.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="{{ STATIC_URL }}tn3/js/jquery.tn3lite.min.js"></script>
-        <script type="text/javascript" src="{{ STATIC_URL }}mediaelement/tn3.mediaelement.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}mediaelement/tn3.mediaelement.min.js" type="text/javascript"></script> -->
         <script>
             $(document).ready(function(){
-                //Examples of how to assign the Colorbox event to elements
-                $(".colorbox-image").colorbox({rel:'colorbox-image'});
+                //$(".colorbox-image").colorbox({rel:'colorbox-image'});
+                //rel="lightbox"
             });
         </script>
     </head>

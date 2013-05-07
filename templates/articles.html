@@ -1,17 +1,28 @@
 {% extends "two_columns.html" %}
-{% load cms_tags menu_tags %}
+{% load cms_tags menu_tags templatetags %}
 
 {% block left_bar %}
     {% load menu_tags %}
-    {% show_menu_below_id "articles" 0 100 100 100 "menu/left_menu.html"%}
+    {% show_menu_below_id "articles" 0 100 100 100 "menu/left_menu.html" %}
 {% endblock %}
 {% block main_bar %}
-    {% page_attribute "page_title" %}
+	{% if request.current_page.parent_id %}
+    	<div class="article-title">{% page_attribute "page_title" %}</div>
+    {% endif %}
     {% for page in request.current_page.get_children %}
         {% if page.published %}
             <div class="article-item">
-                <div class="article-item-title">{% page_attribute "title" page %}</div>
-                <div class="article-item-text">{% show_placeholder "content" page.id None None 300 %}<span class="arrow-block">&nbsp;...</span></div>
+                <div class="article-item-title">
+                	<a href="{% page_url page %}">
+                		{% page_attribute "title" page %}
+                	</a>
+                </div>
+                <div class="article-item-text">
+                	<a href="{% page_url page%}">
+                		{% get_page_content "content" page.id None None 300 %}
+                	</a>
+                	<span class="arrow-block"><a href="{% page_url page%}">&nbsp;...</a></span>
+                </div>
             </div>
         {% endif%}
     {% endfor %}

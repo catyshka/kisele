@@ -127,11 +127,11 @@ TEMPLATE_DIRS = (
 )
 
 CMS_TEMPLATES = (
-    ('template_1.html', 'Template One'),
-    ('template_2.html', 'Template Two'),
+    ('two_columns.html', 'Plain TwoColumns Page'),
     ('index.html', 'Main Page'),
     ('gallery.html', 'Gallery'),
     ('articles.html', 'Articles'),
+    ('gallery_catalog.html', 'Gallery Catalog'),
 )
 # GALLERY_TEMPLATES = (
 #     ('djangocms_gallery/default.html', _('default')),
