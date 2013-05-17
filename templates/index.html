@@ -4,7 +4,26 @@
 {% block base_content %}
     <div class='showcase-block'>
         <div class='showcase showcase-block-active' id='showcase1'>
-            <img src="{{ STATIC_URL }}images/index.jpeg" title="" alt=""/>
+        	<div class="showcase-image">
+            	<img src="{{ STATIC_URL }}images/index.jpeg" title="" alt=""/>
+            </div>
+            <div class="showcase-text">
+            <div class="showcase-title">Здравствуйте!</div>
+ Рада приветствовать Вас на страницах моего сайта! 
+Здесь Вы сможете больше узнать обо мне, о моей врачебной деятельности, 
+о моей профессии. 
+Стремление человека к красоте и гармонии вечно, как и сама жизнь. 
+Однако нельзя забывать и о том, что оба эти понятия неразрывно 
+связаны со здоровьем. Профессия врача, как никакая другая,
+способна объединить в себе все эти необходимые атрибуты жизни человека.
+После окончания Санкт-Петербургской Государственной 
+Педиатрической Медицинской Академии я поступила в ординатуру по дерматовенерологии. 
+После основного образования закончила курсы по терапевтической косметологии на базе 
+Санкт-Петербургского Государственного Медицинского Университета им. И.П.Павлова. 
+Дарить людям красоту без глубоких знаний анатомии, физиологии, 
+фармакологии и специфики кожных заболеваний, 
+которые сопутствуют получению врачебного образования, практически невозможно. 
+            </div>
         </div>
         <div class='showcase' id='showcase2' style="display:none">
             <img src="{{ STATIC_URL }}images/showcase2.jpg" title="" alt=""/>
@@ -13,21 +32,9 @@
             <img src="{{ STATIC_URL }}images/showcase3.jpg" title="" alt=""/>
         </div>
     </div>
-    <div class='row-fluid'>
-        <div class='span4 main-block'>
-            <img class='main-block-image' src='{{ STATIC_URL }}images/eyes.jpg'/>
-            <div class='main-block-tansparent'></div>
-            <div class='main-block-title'>Работы&nbsp&#9658;</div>
-        </div>
-        <div class='span4 main-block'>
-            <img class='main-block-image' src='{{ STATIC_URL }}images/dyplomy.jpg'/>
-            <div class='main-block-tansparent'></div>
-            <div class='main-block-title'>Дипломы&nbsp&#9658;</div>
-        </div>
-        <div class='span4 main-block'>
-            <img class='main-block-image' src='{{ STATIC_URL }}images/dyplomy.jpg'/>
-            <div class='main-block-tansparent'></div>
-            <div class='main-block-title'>Акции&nbsp&#9658;</div>
+    <div class='container'>
+        <div class='main-block'>
+            <div class='main-block-title'> </div>
         </div>
     </div>
 <script type="text/javascript">
@@ -83,9 +90,9 @@
             $(".showcase").each(function(index) {
                 var delayInterval = 6000;
                 var delay = delayInterval*(index);
-                setTimeout(function() {
-                    showcaseSwitcher(index + 1, qnt*delayInterval);
-                }, delay);
+                //setTimeout(function() {
+                //    showcaseSwitcher(index + 1, qnt*delayInterval);
+                //}, delay);
             });
         });
     });

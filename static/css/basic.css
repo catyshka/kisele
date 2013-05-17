@@ -2,8 +2,11 @@ html, body {
     color: #000;
     min-height: 100%;
     height: 100%;
-    /*background-color: #ffba9c;
-    background: #FFF url("/static/images/roses_white_2.jpg") repeat left top;*/
+    background-color: #E9DC99;
+    /*background: #E9DC99 url("/static/images/bg2.png") no-repeat right bottom;*/
+    background: #F9F5DD url("/static/images/pattern.jpg") repeat left top;
+    font-size: 14px;
+    font-family: Verdana,sans-serif;
 }
 #wrap {
     min-height: 100%;
@@ -12,12 +15,27 @@ html, body {
     color: #a67c0a;
 }
 .navbar .navbar-inner {
-    padding: 0;
+    background-image: none;
+    background-repeat: repeat-x;
+    border: 0 solid #2B1F1F;
+    border-radius: 7px;
+    box-shadow: none;
+    min-height: 40px;
+    padding: 10px 50px 0 50px;
+    background-color: #d6c097;
+    height: 60px;
+}
+.navbar .navbar-inner .container{
+	background-color: #bba06b;
+	box-shadow: 2px 2px 13px -5px #000000;
+	border-radius: 7px;
 }
 .main-block {
-    background-color: #fff;
-    height: 200px;
+    background: #d6c097 url("/static/images/block11.png") no-repeat left top;
+    height: 250px;
+    width: 250px;
     position: relative;
+    margin: 0 auto;
 }
 .main-block-tansparent{
     background-color: #2B1F1F;
@@ -31,9 +49,10 @@ html, body {
 }
 .main-block-title {
     position: absolute;
-    bottom: 0;
+    top: 90px;
+    left: 30px;
     height: 20px;
-    color: #FDF5E6;
+    color: #000;
     padding: 10px;
     font-size: 16px;
     font-style: italic;
@@ -50,16 +69,6 @@ input, fieldset, legend {
     border-radius: 7px;
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
-}
-.showcase-block {
-    height: 350px;
-    /*background: #FFF url("/static/images/roses_white_2.jpg") repeat left top;*/
-    margin: 20px 0;
-    border-radius: 34px;
-}
-.showcase {
-    height: 320px;
-    overflow: hidden;
 }
 .phone {
     font-size: 28px;
@@ -91,19 +100,11 @@ input, fieldset, legend {
 .plain-gallery {
     background-color: #fff;
 }
-.navbar-inner {
-    background-color: #2B1F1F;
-    background-image: none;
-    background-repeat: repeat-x;
-    border: 0 solid #2B1F1F;
-    border-radius: 7px;
-    box-shadow: none;
-    min-height: 40px;
-}
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
-    background-color: #2B1F1F;
+    /*background-color: #E9DC99;
     border: 0 solid #2B1F1F;
-    border-radius: 7px;
+    border-radius: 7px;*/
+    background-color: #D6C097;
     box-shadow: none;
     color: #A67C0A;
     text-decoration: underline;
@@ -113,7 +114,7 @@ input, fieldset, legend {
     text-decoration: underline;
 }
 .navbar .nav > li > a {
-    color: #FDF5E6;
+    color: #e5a913;
     font-size: 18px;
     font-weight: 700px;
     float: none;
@@ -158,6 +159,10 @@ input, fieldset, legend {
 .article-item-title {
     color: #A67C0A;
 }
+.article-item-text {
+	/*background: #E9DC99 url("/static/images/frame.png") no-repeat left top;
+	height: 400px;*/
+}
 .article-item-text a {
 	color: #000;
 	text-decoration: none;
@@ -173,4 +178,36 @@ input, fieldset, legend {
 	color: #A67C0A;
 	font-size: 150%;
 	padding: 10px 20px;
+}
+.main-container {
+	background-color: #d6c097;
+	/*margin: 20px auto;
+	border-radius: 28px;*/
+	box-shadow: 2px 2px 13px 3px #000000;
+	height: 100%;
+}
+.showcase-block {
+	background-color: #d6c097;/*#F9F5DD*/
+	opacity: 0.5;
+	/*background: #d6c097 url("/static/images/pattern2.png") repeat left top*/
+}
+.showcase-block {
+    height: 280px;
+    /*background: #FFF url("/static/images/roses_white_2.jpg") repeat left top;*/
+    border-radius: 34px;
+    margin: 20px 50px;
+}
+.showcase {
+    height: 320px;
+    overflow: hidden;
+}
+.showcase-block .showcase-image {
+	float: left;
+	margin: 15px 20px;
+}
+.showcase-block .showcase-text {
+	padding: 15px 20px;
+	/*text-align: justify;*/
+	font-size: 16px;
+	font-style: italic;
 }
