@@ -21,11 +21,13 @@ html, body {
     border-radius: 7px;
     box-shadow: none;
     min-height: 40px;
-    padding: 10px 50px 0 50px;
+    margin: 0 100px;
+    padding: 7px 50px 0 60px;
     background-color: #d6c097;
     height: 60px;
+    background:  transparent url("/static/images/menu_bg.png") no-repeat left top;
 }
-.navbar .navbar-inner .container{
+.navbar .navbar-inner .container1 {
 	background-color: #bba06b;
 	box-shadow: 2px 2px 13px -5px #000000;
 	border-radius: 7px;
@@ -73,8 +75,10 @@ input, fieldset, legend {
 .phone {
     font-size: 28px;
     font-weight: 700;
-    padding: 10px 10px 0 0;
+    padding: 40px 100px 0 0;
     color: #2B1F1F;
+    background: transparent url("/static/images/telefon.png") no-repeat right top;
+    height: 100px;
 }
 .header {
 }
@@ -86,7 +90,6 @@ input, fieldset, legend {
 .plain-gallery .image-block {
     float: left;
     padding: 10px 20px;
-    width: 300px;
 }
 .plain-gallery .image-block img {
     width: 250px;
@@ -98,23 +101,25 @@ input, fieldset, legend {
     clear: both;
 }
 .plain-gallery {
-    background-color: #fff;
+    background-color: transparent;
+    padding: 20px 40px;
 }
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
     /*background-color: #E9DC99;
     border: 0 solid #2B1F1F;
-    border-radius: 7px;*/
-    background-color: #D6C097;
+    border-radius: 7px;
+    background-color: #D6C097;*/
+    background-color: transparent;
     box-shadow: none;
-    color: #A67C0A;
+    color: #996600;
     text-decoration: underline;
 }
 .navbar .nav > li > a:hover, .navbar .nav > li > a:focus {
-    color: #e7ddc2;
+    color: #996600;
     text-decoration: underline;
 }
 .navbar .nav > li > a {
-    color: #e5a913;
+    color: #996600;
     font-size: 18px;
     font-weight: 700px;
     float: none;
@@ -188,7 +193,6 @@ input, fieldset, legend {
 }
 .showcase-block {
 	background-color: #d6c097;/*#F9F5DD*/
-	opacity: 0.5;
 	/*background: #d6c097 url("/static/images/pattern2.png") repeat left top*/
 }
 .showcase-block {
@@ -210,4 +214,20 @@ input, fieldset, legend {
 	/*text-align: justify;*/
 	font-size: 16px;
 	font-style: italic;
+	line-height: 25px;
+}
+.pictures-group {
+	overflow: hidden;
+	border: 0 solid #000;
+	margin: 0 20px 0 0;
+}
+.pictures-group-title {
+	margin: 0 0 0 15px;
+}
+hr.pictures-group-separator {
+	/*border: 1px #bfac8b solid;*/
+	 height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+	margin: 20px 0 0 0;
 }
