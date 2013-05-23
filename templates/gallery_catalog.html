@@ -7,12 +7,12 @@
 {% endblock %}
 {% block main_bar %}
 	{% if request.current_page.parent_id %}
-    	<div class="article-title">{% page_attribute "page_title" %}</div>
+    	<div class="gallery-title">{% page_attribute "page_title" %}</div>
     {% endif %}
     {% for page in request.current_page.get_children %}
         {% if page.published %}
-            <div class="article-item">
-                <div class="article-item-title">
+            <div class="gallery-item">
+                <div class="gallery-item-title">
                 	<a href="{% page_url page %}">
                 		{% page_attribute "title" page %}
                 	</a>
