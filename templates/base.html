@@ -29,6 +29,7 @@
         </script>
     </head>
     <body>
+    <div class="container-fluid">  
         {% cms_toolbar %}
             <div class='container main-container'>
                 {% block header %}
@@ -50,5 +51,6 @@
                 <div class="clear"></div>
             </div>
         {% render_block "js" %}
+    </div>
     </body>
 </html>

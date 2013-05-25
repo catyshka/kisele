@@ -8,6 +8,9 @@ html, body {
     font-size: 14px;
     font-family: Verdana,sans-serif;
 }
+body, html, .container-fluid {  
+  height: 100%;
+}
 #wrap {
     min-height: 100%;
 }
@@ -207,14 +210,13 @@ input, fieldset, legend {
 	/*margin: 20px auto;
 	border-radius: 28px;*/
 	box-shadow: 2px 2px 13px 3px #000000;
-	height: inherit;
 }
 .showcase-block {
 	background-color: #d6c097;/*#F9F5DD*/
 	/*background: #d6c097 url("/static/images/pattern2.png") repeat left top*/
 }
 .showcase-block {
-    height: 280px;
+    min-height: 280px;
     /*background: #FFF url("/static/images/roses_white_2.jpg") repeat left top;*/
     border-radius: 34px;
     margin: 20px 50px;
@@ -279,3 +281,11 @@ hr.pictures-group-separator {
 .wg-gallery-wrapper .gv_galleryWrap {
     background: none repeat scroll 0 0 #CC9933;
 }
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.container-fluid,
+.row-fluid { height: inherit; }
