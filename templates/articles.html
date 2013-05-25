@@ -9,6 +9,10 @@
 	{% if request.current_page.parent_id %}
     	<div class="article-title">{% page_attribute "page_title" %}</div>
     {% endif %}
+    <div class='article-text'>
+    	{% placeholder content %}
+    </div>
+    <div class="article-items-wrapper">
     {% for page in request.current_page.get_children %}
         {% if page.published %}
             <div class="article-item">
@@ -21,10 +25,10 @@
                 	<a href="{% page_url page%}">
                 		{% get_page_content "content" page.id None None 300 %}
                 	</a>
-                	<span class="arrow-block"><a href="{% page_url page%}">&nbsp;...</a></span>
+                	<!--  span class="arrow-block"><a href="{% page_url page%}">...</a></span  -->...
                 </div>
             </div>
         {% endif%}
     {% endfor %}
-    {% placeholder content %}
+    </div>
 {% endblock %}

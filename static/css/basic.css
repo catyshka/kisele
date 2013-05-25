@@ -182,8 +182,12 @@ input, fieldset, legend {
 .article-item {
 	padding: 10px 0;
 }
+.article-text {
+	padding: 10px 40px 40px 0;
+	text-align: justify;
+}
 .article-item-title {
-    color: #A67C0A;
+    color: #000;
 }
 .article-item-text {
 	/*background: #E9DC99 url("/static/images/frame.png") no-repeat left top;
@@ -197,11 +201,19 @@ input, fieldset, legend {
 	text-decoration: underline;
 }
 .article-item-title a {
-	color: #A67C0A;
+	color: #000;
+	font-size: 124%;
 	text-decoration: none;
 }
+.article-items-wrapper {
+	padding: 10px 40px 40px 0;
+	text-align: justify;
+}
+.article-item-title {
+	padding: 10px 0 20px 0;
+}
 .article-title {
-	color: #A67C0A;
+	color: #000;
 	font-size: 150%;
 	padding: 10px 20px;
 }
