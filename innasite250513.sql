@@ -220,7 +220,7 @@ CREATE TABLE `cms_cmsplugin` (
   KEY `cms_cmsplugin_f391089a` (`tree_id`),
   CONSTRAINT `parent_id_refs_id_1f4cd5fd` FOREIGN KEY (`parent_id`) REFERENCES `cms_cmsplugin` (`id`),
   CONSTRAINT `placeholder_id_refs_id_209446bc` FOREIGN KEY (`placeholder_id`) REFERENCES `cms_placeholder` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -229,7 +229,7 @@ CREATE TABLE `cms_cmsplugin` (
 
 LOCK TABLES `cms_cmsplugin` WRITE;
 /*!40000 ALTER TABLE `cms_cmsplugin` DISABLE KEYS */;
-INSERT INTO `cms_cmsplugin` VALUES (1,7,NULL,0,'en','CMSPlainGalleryPlugin','2013-05-22 10:56:29','2013-05-22 10:56:33',0,1,2,1),(2,8,NULL,0,'en','CMSPlainGalleryPlugin','2013-05-22 10:56:29','2013-05-22 10:56:40',0,1,2,2),(5,21,NULL,0,'en','CMSGalleryPlugin','2013-05-25 08:49:05','2013-05-25 08:49:11',0,1,2,5),(6,22,NULL,0,'en','CMSGalleryPlugin','2013-05-25 08:49:05','2013-05-25 08:49:20',0,1,2,6);
+INSERT INTO `cms_cmsplugin` VALUES (1,7,NULL,0,'en','CMSPlainGalleryPlugin','2013-05-22 10:56:29','2013-05-22 10:56:33',0,1,2,1),(2,8,NULL,0,'en','CMSPlainGalleryPlugin','2013-05-22 10:56:29','2013-05-22 10:56:40',0,1,2,2),(5,21,NULL,0,'en','CMSGalleryPlugin','2013-05-25 08:49:05','2013-05-25 08:49:11',0,1,2,5),(6,22,NULL,0,'en','CMSGalleryPlugin','2013-05-25 08:49:05','2013-05-25 08:49:20',0,1,2,6),(8,45,NULL,0,'en','TextPlugin','2013-05-25 11:11:06','2013-05-25 11:15:07',0,1,2,8),(9,46,NULL,0,'en','TextPlugin','2013-05-25 11:11:39','2013-05-25 11:11:44',0,1,2,9),(10,47,NULL,0,'en','TextPlugin','2013-05-25 11:12:02','2013-05-25 11:12:07',0,1,2,10),(11,48,NULL,0,'en','TextPlugin','2013-05-25 11:12:02','2013-05-25 11:12:14',0,1,2,11),(12,49,NULL,0,'en','TextPlugin','2013-05-25 11:11:39','2013-05-25 11:12:15',0,1,2,12),(17,50,NULL,0,'en','TextPlugin','2013-05-25 11:11:06','2013-05-25 11:24:58',0,1,2,13);
 /*!40000 ALTER TABLE `cms_cmsplugin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -351,7 +351,7 @@ CREATE TABLE `cms_page` (
   CONSTRAINT `parent_id_refs_id_653a773` FOREIGN KEY (`parent_id`) REFERENCES `cms_page` (`id`),
   CONSTRAINT `publisher_public_id_refs_id_653a773` FOREIGN KEY (`publisher_public_id`) REFERENCES `cms_page` (`id`),
   CONSTRAINT `site_id_refs_id_128f08e6` FOREIGN KEY (`site_id`) REFERENCES `django_site` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -360,7 +360,7 @@ CREATE TABLE `cms_page` (
 
 LOCK TABLES `cms_page` WRITE;
 /*!40000 ALTER TABLE `cms_page` DISABLE KEYS */;
-INSERT INTO `cms_page` VALUES (1,'admin','admin',NULL,'2013-05-22 10:46:34','2013-05-22 10:49:23','2013-05-22 10:46:40',NULL,1,0,NULL,'',1,'index.html',1,0,1,2,1,0,NULL,1,2,0),(2,'admin','admin',NULL,'2013-05-22 10:46:45','2013-05-22 10:49:23','2013-05-22 10:46:40',NULL,1,0,NULL,'',1,'index.html',1,0,1,2,2,0,NULL,0,1,0),(3,'admin','admin',NULL,'2013-05-22 10:47:11','2013-05-23 14:47:51','2013-05-22 10:48:17',NULL,1,0,'gallery_catalog','',1,'gallery_catalog.html',1,0,1,6,6,0,NULL,1,4,0),(4,'admin','admin',NULL,'2013-05-22 10:48:22','2013-05-23 14:47:51','2013-05-22 10:48:17',NULL,1,0,'gallery_catalog','',1,'gallery_catalog.html',1,0,1,6,4,0,NULL,0,3,0),(5,'admin','admin',3,'2013-05-22 10:49:58','2013-05-22 10:56:40','2013-05-22 10:50:00',NULL,1,0,NULL,'',1,'gallery.html',1,1,2,3,6,0,NULL,1,6,0),(6,'admin','admin',4,'2013-05-22 10:50:05','2013-05-22 10:56:40','2013-05-22 10:50:00',NULL,1,0,NULL,'',1,'gallery.html',1,1,2,3,4,0,NULL,0,5,0),(7,'admin','admin',3,'2013-05-23 14:50:12','2013-05-23 14:50:56','2013-05-23 14:50:12',NULL,1,0,NULL,'',1,'gallery.html',1,1,4,5,6,0,NULL,1,8,0),(8,'admin','admin',4,'2013-05-23 14:50:17','2013-05-23 14:50:56','2013-05-23 14:50:12',NULL,1,0,NULL,'',1,'gallery.html',1,1,4,5,4,0,NULL,0,7,0),(10,'admin','admin',NULL,'2013-05-23 16:30:05','2013-05-25 08:49:20','2013-05-23 16:30:41',NULL,1,0,NULL,'',1,'galleryOneColumn.html',1,0,1,2,5,0,NULL,1,11,0),(11,'admin','admin',NULL,'2013-05-23 16:30:45','2013-05-25 08:49:20','2013-05-23 16:30:41',NULL,1,0,NULL,'',1,'galleryOneColumn.html',1,0,1,2,3,0,NULL,0,10,0);
+INSERT INTO `cms_page` VALUES (1,'admin','admin',NULL,'2013-05-22 10:46:34','2013-05-22 10:49:23','2013-05-22 10:46:40',NULL,1,0,NULL,'',1,'index.html',1,0,1,2,1,0,NULL,1,2,0),(2,'admin','admin',NULL,'2013-05-22 10:46:45','2013-05-22 10:49:23','2013-05-22 10:46:40',NULL,1,0,NULL,'',1,'index.html',1,0,1,2,2,0,NULL,0,1,0),(3,'admin','admin',NULL,'2013-05-22 10:47:11','2013-05-23 14:47:51','2013-05-22 10:48:17',NULL,1,0,'gallery_catalog','',1,'gallery_catalog.html',1,0,1,6,7,0,NULL,1,4,0),(4,'admin','admin',NULL,'2013-05-22 10:48:22','2013-05-23 14:47:51','2013-05-22 10:48:17',NULL,1,0,'gallery_catalog','',1,'gallery_catalog.html',1,0,1,6,4,0,NULL,0,3,0),(5,'admin','admin',3,'2013-05-22 10:49:58','2013-05-22 10:56:40','2013-05-22 10:50:00',NULL,1,0,NULL,'',1,'gallery.html',1,1,2,3,7,0,NULL,1,6,0),(6,'admin','admin',4,'2013-05-22 10:50:05','2013-05-22 10:56:40','2013-05-22 10:50:00',NULL,1,0,NULL,'',1,'gallery.html',1,1,2,3,4,0,NULL,0,5,0),(7,'admin','admin',3,'2013-05-23 14:50:12','2013-05-23 14:50:56','2013-05-23 14:50:12',NULL,1,0,NULL,'',1,'gallery.html',1,1,4,5,7,0,NULL,1,8,0),(8,'admin','admin',4,'2013-05-23 14:50:17','2013-05-23 14:50:56','2013-05-23 14:50:12',NULL,1,0,NULL,'',1,'gallery.html',1,1,4,5,4,0,NULL,0,7,0),(10,'admin','admin',NULL,'2013-05-23 16:30:05','2013-05-25 08:49:20','2013-05-23 16:30:41',NULL,1,0,NULL,'',1,'galleryOneColumn.html',1,0,1,2,6,0,NULL,1,11,0),(11,'admin','admin',NULL,'2013-05-23 16:30:45','2013-05-25 08:49:20','2013-05-23 16:30:41',NULL,1,0,NULL,'',1,'galleryOneColumn.html',1,0,1,2,3,0,NULL,0,10,0),(12,'admin','admin',NULL,'2013-05-25 11:03:12','2013-05-25 11:24:46','2013-05-25 11:03:29',NULL,1,0,'articles','',1,'articles.html',1,0,1,8,8,0,NULL,1,13,0),(13,'admin','admin',NULL,'2013-05-25 11:03:34','2013-05-25 11:24:46','2013-05-25 11:03:29',NULL,1,0,'articles','',1,'articles.html',1,0,1,10,5,0,NULL,0,12,0),(15,'admin','admin',12,'2013-05-25 11:08:22','2013-05-25 11:24:58','2013-05-25 11:08:46',NULL,1,0,NULL,'',1,'articles.html',1,1,2,3,8,0,NULL,1,20,0),(16,'admin','admin',12,'2013-05-25 11:08:33','2013-05-25 11:12:15','2013-05-25 11:08:46',NULL,1,0,NULL,'',1,'articles.html',1,1,4,5,8,0,NULL,1,19,0),(17,'admin','admin',12,'2013-05-25 11:08:44','2013-05-25 11:12:14','2013-05-25 11:08:45',NULL,1,0,NULL,'',1,'articles.html',1,1,6,7,8,0,NULL,1,18,0),(18,'admin','admin',13,'2013-05-25 11:08:50','2013-05-25 11:12:14','2013-05-25 11:08:45',NULL,1,0,NULL,'',1,'articles.html',1,1,8,9,5,0,NULL,0,17,0),(19,'admin','admin',13,'2013-05-25 11:08:50','2013-05-25 11:12:15','2013-05-25 11:08:46',NULL,1,0,NULL,'',1,'articles.html',1,1,6,7,5,0,NULL,0,16,0),(20,'admin','admin',13,'2013-05-25 11:08:51','2013-05-25 11:24:58','2013-05-25 11:08:46',NULL,1,0,NULL,'',1,'articles.html',1,1,4,5,5,0,NULL,0,15,0);
 /*!40000 ALTER TABLE `cms_page` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -381,7 +381,7 @@ CREATE TABLE `cms_page_placeholders` (
   KEY `cms_page_placeholders_2037f56b` (`placeholder_id`),
   CONSTRAINT `page_id_refs_id_4dd4551b` FOREIGN KEY (`page_id`) REFERENCES `cms_page` (`id`),
   CONSTRAINT `placeholder_id_refs_id_4f20b6a0` FOREIGN KEY (`placeholder_id`) REFERENCES `cms_placeholder` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -390,7 +390,7 @@ CREATE TABLE `cms_page_placeholders` (
 
 LOCK TABLES `cms_page_placeholders` WRITE;
 /*!40000 ALTER TABLE `cms_page_placeholders` DISABLE KEYS */;
-INSERT INTO `cms_page_placeholders` VALUES (1,1,1),(2,1,2),(3,2,3),(4,2,4),(5,3,5),(6,4,6),(7,5,7),(8,6,8),(9,7,9),(10,7,10),(13,7,13),(11,8,11),(12,8,12),(14,8,14),(17,10,17),(18,10,18),(21,10,21),(19,11,19),(20,11,20),(22,11,22);
+INSERT INTO `cms_page_placeholders` VALUES (1,1,1),(2,1,2),(3,2,3),(4,2,4),(5,3,5),(6,4,6),(7,5,7),(8,6,8),(9,7,9),(10,7,10),(13,7,13),(11,8,11),(12,8,12),(14,8,14),(17,10,17),(18,10,18),(21,10,21),(19,11,19),(20,11,20),(22,11,22),(23,12,23),(24,12,24),(43,12,43),(25,13,25),(26,13,26),(44,13,44),(29,15,29),(30,15,30),(45,15,45),(31,16,31),(32,16,32),(46,16,46),(33,17,33),(34,17,34),(47,17,47),(35,18,35),(36,18,36),(48,18,48),(37,19,37),(38,19,38),(49,19,49),(39,20,39),(40,20,40),(50,20,50);
 /*!40000 ALTER TABLE `cms_page_placeholders` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -413,7 +413,7 @@ CREATE TABLE `cms_pagemoderatorstate` (
   KEY `cms_pagemoderatorstate_6340c63c` (`user_id`),
   CONSTRAINT `page_id_refs_id_b236163` FOREIGN KEY (`page_id`) REFERENCES `cms_page` (`id`),
   CONSTRAINT `user_id_refs_id_2808fb19` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -530,7 +530,7 @@ CREATE TABLE `cms_placeholder` (
   `default_width` smallint(5) unsigned DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `cms_placeholder_d5d328be` (`slot`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -539,7 +539,7 @@ CREATE TABLE `cms_placeholder` (
 
 LOCK TABLES `cms_placeholder` WRITE;
 /*!40000 ALTER TABLE `cms_placeholder` DISABLE KEYS */;
-INSERT INTO `cms_placeholder` VALUES (1,'main_bar',NULL),(2,'left_bar',NULL),(3,'main_bar',NULL),(4,'left_bar',NULL),(5,'gallery_content',NULL),(6,'gallery_content',NULL),(7,'gallery_content',NULL),(8,'gallery_content',NULL),(9,'main_bar',NULL),(10,'left_bar',NULL),(11,'main_bar',NULL),(12,'left_bar',NULL),(13,'gallery_content',NULL),(14,'gallery_content',NULL),(17,'main_bar',NULL),(18,'left_bar',NULL),(19,'main_bar',NULL),(20,'left_bar',NULL),(21,'gallery_content',NULL),(22,'gallery_content',NULL);
+INSERT INTO `cms_placeholder` VALUES (1,'main_bar',NULL),(2,'left_bar',NULL),(3,'main_bar',NULL),(4,'left_bar',NULL),(5,'gallery_content',NULL),(6,'gallery_content',NULL),(7,'gallery_content',NULL),(8,'gallery_content',NULL),(9,'main_bar',NULL),(10,'left_bar',NULL),(11,'main_bar',NULL),(12,'left_bar',NULL),(13,'gallery_content',NULL),(14,'gallery_content',NULL),(17,'main_bar',NULL),(18,'left_bar',NULL),(19,'main_bar',NULL),(20,'left_bar',NULL),(21,'gallery_content',NULL),(22,'gallery_content',NULL),(23,'main_bar',NULL),(24,'left_bar',NULL),(25,'main_bar',NULL),(26,'left_bar',NULL),(29,'main_bar',NULL),(30,'left_bar',NULL),(31,'main_bar',NULL),(32,'left_bar',NULL),(33,'main_bar',NULL),(34,'left_bar',NULL),(35,'main_bar',NULL),(36,'left_bar',NULL),(37,'main_bar',NULL),(38,'left_bar',NULL),(39,'main_bar',NULL),(40,'left_bar',NULL),(41,'main_bar',NULL),(42,'left_bar',NULL),(43,'content',NULL),(44,'content',NULL),(45,'content',NULL),(46,'content',NULL),(47,'content',NULL),(48,'content',NULL),(49,'content',NULL),(50,'content',NULL);
 /*!40000 ALTER TABLE `cms_placeholder` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -574,7 +574,7 @@ CREATE TABLE `cms_title` (
   KEY `cms_title_daea3734` (`application_urls`),
   KEY `cms_title_3fb9c94f` (`page_id`),
   CONSTRAINT `page_id_refs_id_36799a1` FOREIGN KEY (`page_id`) REFERENCES `cms_page` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -583,7 +583,7 @@ CREATE TABLE `cms_title` (
 
 LOCK TABLES `cms_title` WRITE;
 /*!40000 ALTER TABLE `cms_title` DISABLE KEYS */;
-INSERT INTO `cms_title` VALUES (1,'en','Главная','','glavnaya','',0,'','','','','',1,'2013-05-22 10:46:34'),(2,'en','Главная','','glavnaya','',0,'','','','','',2,'2013-05-22 10:46:34'),(3,'en','Галерея работ','','galereya-rabot','galereya-rabot',0,'','','','','',3,'2013-05-22 10:47:11'),(4,'en','Галерея работ','','galereya-rabot','galereya-rabot',0,'','','','','',4,'2013-05-22 10:47:11'),(5,'en','Преображение',NULL,'preobrazhenie','galereya-rabot/preobrazhenie',0,NULL,NULL,NULL,NULL,NULL,5,'2013-05-22 10:49:58'),(6,'en','Преображение',NULL,'preobrazhenie','galereya-rabot/preobrazhenie',0,NULL,NULL,NULL,NULL,NULL,6,'2013-05-22 10:49:58'),(7,'en','Перманентный макияж','','permanentnyj-makiyazh','galereya-rabot/permanentnyj-makiyazh',0,'','','','','',7,'2013-05-23 14:50:12'),(8,'en','Перманентный макияж','','permanentnyj-makiyazh','galereya-rabot/permanentnyj-makiyazh',0,'','','','','',8,'2013-05-23 14:50:12'),(10,'en','Дипломы','','diplomy2','diplomy2',0,'','','','','',10,'2013-05-23 16:30:05'),(11,'en','Дипломы','','diplomy2','diplomy2',0,'','','','','',11,'2013-05-23 16:30:05');
+INSERT INTO `cms_title` VALUES (1,'en','Главная','','glavnaya','',0,'','','','','',1,'2013-05-22 10:46:34'),(2,'en','Главная','','glavnaya','',0,'','','','','',2,'2013-05-22 10:46:34'),(3,'en','Галерея работ','','galereya-rabot','galereya-rabot',0,'','','','','',3,'2013-05-22 10:47:11'),(4,'en','Галерея работ','','galereya-rabot','galereya-rabot',0,'','','','','',4,'2013-05-22 10:47:11'),(5,'en','Преображение',NULL,'preobrazhenie','galereya-rabot/preobrazhenie',0,NULL,NULL,NULL,NULL,NULL,5,'2013-05-22 10:49:58'),(6,'en','Преображение',NULL,'preobrazhenie','galereya-rabot/preobrazhenie',0,NULL,NULL,NULL,NULL,NULL,6,'2013-05-22 10:49:58'),(7,'en','Перманентный макияж','','permanentnyj-makiyazh','galereya-rabot/permanentnyj-makiyazh',0,'','','','','',7,'2013-05-23 14:50:12'),(8,'en','Перманентный макияж','','permanentnyj-makiyazh','galereya-rabot/permanentnyj-makiyazh',0,'','','','','',8,'2013-05-23 14:50:12'),(10,'en','Дипломы','','diplomy2','diplomy2',0,'','','','','',10,'2013-05-23 16:30:05'),(11,'en','Дипломы','','diplomy2','diplomy2',0,'','','','','',11,'2013-05-23 16:30:05'),(12,'en','Услуги','','uslugi','uslugi',0,'','','','','',12,'2013-05-25 11:03:12'),(13,'en','Услуги','','uslugi','uslugi',0,'','','','','',13,'2013-05-25 11:03:12'),(15,'en','Инъекции красоты','','inekcii-krasoty','uslugi/inekcii-krasoty',0,'','','','','',15,'2013-05-25 11:08:22'),(16,'en','Пилинги','','pilingi','uslugi/pilingi',0,'','','','','',16,'2013-05-25 11:08:33'),(17,'en','Аппаратная косметология','','apparatnaya-kosmetologiya','uslugi/apparatnaya-kosmetologiya',0,'','','','','',17,'2013-05-25 11:08:44'),(18,'en','Аппаратная косметология','','apparatnaya-kosmetologiya','uslugi/apparatnaya-kosmetologiya',0,'','','','','',18,'2013-05-25 11:08:44'),(19,'en','Пилинги','','pilingi','uslugi/pilingi',0,'','','','','',19,'2013-05-25 11:08:33'),(20,'en','Инъекции красоты','','inekcii-krasoty','uslugi/inekcii-krasoty',0,'','','','','',20,'2013-05-25 11:08:22');
 /*!40000 ALTER TABLE `cms_title` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -634,6 +634,7 @@ CREATE TABLE `cmsplugin_text` (
 
 LOCK TABLES `cmsplugin_text` WRITE;
 /*!40000 ALTER TABLE `cmsplugin_text` DISABLE KEYS */;
+INSERT INTO `cmsplugin_text` VALUES (8,'   По  причинам,  вполне  убедительным  для  автора,  многие  места, люди,наблюдения и впечатления не вошли в  эту  книгу.  Некоторые  из  них  должныостаться  в  тайне,  а  другие  известны всем, о них писали и, без сомнения,будут писать еще.     Здесь ничего не говорится о стадионе \"Анастази\", где ринг был  в  саду,под деревьями стояли столики, а официантами были боксеры. Ни о тренировках сЛарри Гейнсом, ни о знаменитых матчах по двадцать раундов в Зимнем цирке. Нио  таких  близких  друзьях,  как  Чарли Суини, Билл Берд и Майк Стрэйтер илиАндре Массон  и  Миро.  Ничего  не  говорится  ни  о  наших  путешествиях  вШварцвальд, ни о наших однодневных прогулках по любимым лесам вокруг Парижа.Было  бы  очень  хорошо,  если  бы  все  это вошло в книгу, но пока придетсяобойтись без этого.     Если читатель пожелает, он может считать эту книгу  беллетристикой.  Новедь  и  беллетристическое произведение может пролить какой-то свет на то, о<p>чем пишут, как о реальных фактах.</p>'),(9,'<p>test</p>'),(10,'<p>test</p>'),(11,'<p>test</p>'),(12,'<p>test</p>'),(17,'   По  причинам,  вполне  убедительным  для  автора,  многие  места, люди,наблюдения и впечатления не вошли в  эту  книгу.  Некоторые  из  них  должныостаться  в  тайне,  а  другие  известны всем, о них писали и, без сомнения,будут писать еще.     Здесь ничего не говорится о стадионе \"Анастази\", где ринг был  в  саду,под деревьями стояли столики, а официантами были боксеры. Ни о тренировках сЛарри Гейнсом, ни о знаменитых матчах по двадцать раундов в Зимнем цирке. Нио  таких  близких  друзьях,  как  Чарли Суини, Билл Берд и Майк Стрэйтер илиАндре Массон  и  Миро.  Ничего  не  говорится  ни  о  наших  путешествиях  вШварцвальд, ни о наших однодневных прогулках по любимым лесам вокруг Парижа.Было  бы  очень  хорошо,  если  бы  все  это вошло в книгу, но пока придетсяобойтись без этого.     Если читатель пожелает, он может считать эту книгу  беллетристикой.  Новедь  и  беллетристическое произведение может пролить какой-то свет на то, о<p>чем пишут, как о реальных фактах.</p>');
 /*!40000 ALTER TABLE `cmsplugin_text` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -658,7 +659,7 @@ CREATE TABLE `django_admin_log` (
   KEY `django_admin_log_37ef4eb4` (`content_type_id`),
   CONSTRAINT `content_type_id_refs_id_93d2d1f8` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`),
   CONSTRAINT `user_id_refs_id_c0d12874` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -667,7 +668,7 @@ CREATE TABLE `django_admin_log` (
 
 LOCK TABLES `django_admin_log` WRITE;
 /*!40000 ALTER TABLE `django_admin_log` DISABLE KEYS */;
-INSERT INTO `django_admin_log` VALUES (1,'2013-05-22 10:46:34',1,13,'1','Главная',1,''),(2,'2013-05-22 10:47:11',1,13,'3','Галерея работ',1,''),(3,'2013-05-22 10:47:27',1,9,'1','Преображение',1,''),(4,'2013-05-22 10:47:49',1,10,'1','Валя02.01.13',1,''),(5,'2013-05-22 10:48:07',1,10,'2','Света03.12.11',1,''),(6,'2013-05-22 10:48:47',1,13,'3','Галерея работ',2,'Changed template and language.'),(7,'2013-05-22 10:49:21',1,13,'1','Главная',2,'Changed template and language.'),(8,'2013-05-22 10:49:58',1,13,'5','Преображение',1,''),(9,'2013-05-23 14:47:36',1,13,'3','Галерея работ',2,'Changed reverse_id and language.'),(10,'2013-05-23 14:50:12',1,13,'7','Перманентный макияж',1,''),(11,'2013-05-23 14:50:52',1,13,'7','Перманентный макияж',2,'Changed template and language.'),(12,'2013-05-23 16:28:09',1,13,'9','Дипломы',1,''),(13,'2013-05-23 16:29:17',1,13,'9','Дипломы',3,''),(14,'2013-05-23 16:30:05',1,13,'10','Дипломы',1,''),(15,'2013-05-25 06:58:47',1,9,'2','Дипломы',1,''),(16,'2013-05-25 06:59:21',1,10,'3','1',1,''),(17,'2013-05-25 07:04:17',1,13,'10','Дипломы',2,'Changed template and language.'),(18,'2013-05-25 07:04:53',1,13,'10','Дипломы',2,'Changed language.'),(19,'2013-05-25 07:39:48',1,10,'3','1',2,'Changed gallery.');
+INSERT INTO `django_admin_log` VALUES (1,'2013-05-22 10:46:34',1,13,'1','Главная',1,''),(2,'2013-05-22 10:47:11',1,13,'3','Галерея работ',1,''),(3,'2013-05-22 10:47:27',1,9,'1','Преображение',1,''),(4,'2013-05-22 10:47:49',1,10,'1','Валя02.01.13',1,''),(5,'2013-05-22 10:48:07',1,10,'2','Света03.12.11',1,''),(6,'2013-05-22 10:48:47',1,13,'3','Галерея работ',2,'Changed template and language.'),(7,'2013-05-22 10:49:21',1,13,'1','Главная',2,'Changed template and language.'),(8,'2013-05-22 10:49:58',1,13,'5','Преображение',1,''),(9,'2013-05-23 14:47:36',1,13,'3','Галерея работ',2,'Changed reverse_id and language.'),(10,'2013-05-23 14:50:12',1,13,'7','Перманентный макияж',1,''),(11,'2013-05-23 14:50:52',1,13,'7','Перманентный макияж',2,'Changed template and language.'),(12,'2013-05-23 16:28:09',1,13,'9','Дипломы',1,''),(13,'2013-05-23 16:29:17',1,13,'9','Дипломы',3,''),(14,'2013-05-23 16:30:05',1,13,'10','Дипломы',1,''),(15,'2013-05-25 06:58:47',1,9,'2','Дипломы',1,''),(16,'2013-05-25 06:59:21',1,10,'3','1',1,''),(17,'2013-05-25 07:04:17',1,13,'10','Дипломы',2,'Changed template and language.'),(18,'2013-05-25 07:04:53',1,13,'10','Дипломы',2,'Changed language.'),(19,'2013-05-25 07:39:48',1,10,'3','1',2,'Changed gallery.'),(20,'2013-05-25 11:03:12',1,13,'12','Услуги',1,''),(21,'2013-05-25 11:08:04',1,13,'14','Перманентный макияж',1,''),(22,'2013-05-25 11:08:22',1,13,'15','Инъекции красоты',1,''),(23,'2013-05-25 11:08:33',1,13,'16','Пилинги',1,''),(24,'2013-05-25 11:08:44',1,13,'17','Аппаратная косметология',1,''),(25,'2013-05-25 11:09:25',1,13,'12','Услуги',2,'Changed template and language.'),(26,'2013-05-25 11:11:25',1,13,'14','Перманентный макияж',3,''),(27,'2013-05-25 11:11:46',1,13,'16','Пилинги',2,'Changed template and language.'),(28,'2013-05-25 11:12:09',1,13,'17','Аппаратная косметология',2,'Changed template and language.'),(29,'2013-05-25 11:13:00',1,13,'15','Инъекции красоты',2,'Changed template and language.'),(30,'2013-05-25 11:14:10',1,13,'15','Инъекции красоты',2,'Changed language.'),(31,'2013-05-25 11:15:09',1,13,'15','Инъекции красоты',2,'Changed language.'),(32,'2013-05-25 11:24:43',1,13,'12','Услуги',2,'Changed reverse_id and language.');
 /*!40000 ALTER TABLE `django_admin_log` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -720,7 +721,7 @@ CREATE TABLE `django_session` (
 
 LOCK TABLES `django_session` WRITE;
 /*!40000 ALTER TABLE `django_session` DISABLE KEYS */;
-INSERT INTO `django_session` VALUES ('s25h70d6xsaror2go4x38cbwzxyyx3qo','MmJhNTE5ZTEwYjQ4OTYyOTI5ZmIzNGYwYTI1NWQxMmUyYWRhZDQ1MzqAAn1xAShVDmNtc19hZG1pbl9zaXRligEBVQ1fYXV0aF91c2VyX2lkigEBVRJfYXV0aF91c2VyX2JhY2tlbmRVKWRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kVQlfbWVzc2FnZXNdcQJjZGphbmdvLmNvbnRyaWIubWVzc2FnZXMuc3RvcmFnZS5iYXNlCk1lc3NhZ2UKcQMpgXEEfXEFKFUKZXh0cmFfdGFnc3EGWAAAAABVB21lc3NhZ2VxB1g1AAAAVGhlIHBhZ2UgItCU0LjQv9C70L7QvNGLIiB3YXMgc3VjY2Vzc2Z1bGx5IHB1Ymxpc2hlZC5VBWxldmVscQhLFHViYXUu','2013-06-08 08:52:34');
+INSERT INTO `django_session` VALUES ('s25h70d6xsaror2go4x38cbwzxyyx3qo','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','2013-06-08 11:24:58');
 /*!40000 ALTER TABLE `django_session` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -843,7 +844,7 @@ CREATE TABLE `menus_cachekey` (
   `site` int(10) unsigned NOT NULL,
   `key` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -852,7 +853,7 @@ CREATE TABLE `menus_cachekey` (
 
 LOCK TABLES `menus_cachekey` WRITE;
 /*!40000 ALTER TABLE `menus_cachekey` DISABLE KEYS */;
-INSERT INTO `menus_cachekey` VALUES (16,'en-us',1,'menu_cache_menu_nodes_en-us_1_1_user');
+INSERT INTO `menus_cachekey` VALUES (27,'en-us',1,'menu_cache_menu_nodes_en-us_1_1_user');
 /*!40000 ALTER TABLE `menus_cachekey` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -891,4 +892,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-05-25 13:15:58
+-- Dump completed on 2013-05-25 15:26:44
