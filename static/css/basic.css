@@ -216,7 +216,7 @@ input, fieldset, legend {
 	/*background: #d6c097 url("/static/images/pattern2.png") repeat left top*/
 }
 .showcase-block {
-    min-height: 280px;
+    min-height: 450px;
     /*background: #FFF url("/static/images/roses_white_2.jpg") repeat left top;*/
     border-radius: 34px;
     margin: 20px 50px;
