@@ -6,6 +6,11 @@
     {% show_menu_below_id "gallery_catalog" 0 100 100 100 "menu/left_menu.html" %}
 {% endblock %}
 {% block main_bar %}
+	<script type="text/javascript">
+	$(function(){
+		$('.jwGallery').galleryView();
+	});
+	</script>
 	{% if request.current_page.parent_id %}
     	<div class="gallery-title">{% page_attribute "page_title" %}</div>
     {% endif %}

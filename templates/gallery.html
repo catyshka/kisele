@@ -1,6 +1,10 @@
-{% extends "base.html" %}
+{% extends "two_columns.html" %}
 {% load cms_tags %}
 
-{% block base_content %}
+{% block left_bar %}
+    {% load menu_tags %}
+    {% show_menu_below_id "gallery_catalog" 0 100 100 100 "menu/left_menu.html" %}
+{% endblock %}
+{% block main_bar %}
     {% placeholder gallery_content %}
 {% endblock %}
