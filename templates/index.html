@@ -8,20 +8,20 @@
             	<img src="{{ STATIC_URL }}images/index.jpeg" title="" alt=""/>
             </div>
             <div class="showcase-text">
-            <div class="showcase-title">Вас приветствует Быданова Инна Игоревна!</div>
-Здесь Вы сможете больше узнать обо мне, о моей врачебной деятельности, 
-о моей профессии. 
-Стремление человека к красоте и гармонии вечно, как и сама жизнь. 
-Однако нельзя забывать и о том, что оба эти понятия неразрывно 
-связаны со здоровьем. Профессия врача, как никакая другая,
-способна объединить в себе все эти необходимые атрибуты жизни человека.
-После окончания Санкт-Петербургской Государственной 
-Педиатрической Медицинской Академии я поступила в ординатуру по дерматовенерологии. 
-После основного образования закончила курсы по терапевтической косметологии на базе 
-Санкт-Петербургского Государственного Медицинского Университета им. И.П.Павлова. 
-Дарить людям красоту без глубоких знаний анатомии, физиологии, 
-фармакологии и специфики кожных заболеваний, 
-которые сопутствуют получению врачебного образования, практически невозможно. 
+            	<div class="showcase-title">Вас приветствует Быданова Инна Игоревна!</div>
+				Здесь Вы сможете больше узнать обо мне, о моей врачебной деятельности, 
+				о моей профессии. 
+				Стремление человека к красоте и гармонии вечно, как и сама жизнь. 
+				Однако нельзя забывать и о том, что оба эти понятия неразрывно 
+				связаны со здоровьем. Профессия врача, как никакая другая,
+				способна объединить в себе все эти необходимые атрибуты жизни человека.
+				После окончания Санкт-Петербургской Государственной 
+				Педиатрической Медицинской Академии я поступила в ординатуру по дерматовенерологии. 
+				После основного образования закончила курсы по терапевтической косметологии на базе 
+				Санкт-Петербургского Государственного Медицинского Университета им. И.П.Павлова. 
+				Дарить людям красоту без глубоких знаний анатомии, физиологии, 
+				фармакологии и специфики кожных заболеваний, 
+				которые сопутствуют получению врачебного образования, практически невозможно. 
             </div>
         </div>
         <div class='showcase' id='showcase2' style="display:none">
@@ -31,9 +31,60 @@
             <img src="{{ STATIC_URL }}images/showcase3.jpg" title="" alt=""/>
         </div>
     </div>
+    <div class='lenta-wrapper makeMeScrollable'>
+		<div class='lenta '>
+			<div class='lenta-block' style="background:url('/static/images/lentaBlock1.jpeg')">
+				<div class='lenta-block-tansparent'></div>
+				<div class='lenta-block-title'>Пилинги</div>
+			</div>
+			<div class='lenta-block' style="background:url('/static/images/lentaBlock2.jpeg')">
+				<div class='lenta-block-tansparent'></div>
+				<div class='lenta-block-title'>Уходы за лицом</div>
+			</div>
+			<div class='lenta-block' style="background:url('/static/images/lentaBlock3.jpeg')">
+				<div class='lenta-block-tansparent'></div>
+				<div class='lenta-block-title'>Инъекции красоты</div>
+			</div>
+			<div class='lenta-block' style="background:url('/static/images/lentaBlock4.jpeg')">
+				<div class='lenta-block-tansparent'></div>
+				<div class='lenta-block-title'>Аппаратная косметология</div>
+			</div>
+			<div class='lenta-block' style="background:url('/static/images/lentaBlock5.jpeg')">
+				<div class='lenta-block-tansparent'></div>
+				<div class='lenta-block-title'> </div>
+			</div>
+			
+			<div class='lenta-block' style="background:url('/static/images/lentaBlock1.jpeg')">
+				<div class='lenta-block-tansparent'></div>
+				<div class='lenta-block-title'>Пилинги</div>
+			</div>
+			<div class='lenta-block' style="background:url('/static/images/lentaBlock2.jpeg')">
+				<div class='lenta-block-tansparent'></div>
+				<div class='lenta-block-title'>Уходы за лицом</div>
+			</div>
+			<div class='lenta-block' style="background:url('/static/images/lentaBlock3.jpeg')">
+				<div class='lenta-block-tansparent'></div>
+				<div class='lenta-block-title'>Инъекции красоты</div>
+			</div>
+			<div class='lenta-block' style="background:url('/static/images/lentaBlock4.jpeg')">
+				<div class='lenta-block-tansparent'></div>
+				<div class='lenta-block-title'>Аппаратная косметология</div>
+			</div>
+			<div class='lenta-block' style="background:url('/static/images/lentaBlock5.jpeg')">
+				<div class='lenta-block-tansparent'></div>
+				<div class='lenta-block-title'> </div>
+			</div>
+		</div>
+	</div>
+	<div class='clear'></div>
     <div class='bottom-slogan'>
-         Доверь кросоту профессионалу!
+         Доверь красоту профессионалу!
     </div>
+<script type="text/javascript">
+	$(function() {
+		$(".makeMeScrollable").smoothDivScroll({});
+	});
+</script>
 <script type="text/javascript">
     function activateMenuItem(number) {
         switch(number){

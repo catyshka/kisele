@@ -2,9 +2,10 @@ html, body {
     color: #452A1F;
     min-height: 100%;
     height: 100%;
-    background-color: #E9DC99;
-    /*background: #E9DC99 url("/static/images/bg2.png") no-repeat right bottom;*/
-    background: #F9F5DD url("/static/images/pattern.jpg") repeat left top;
+    background-color: #FFF;
+    /*background-color: #E9DC99;
+    /*background: #E9DC99 url("/static/images/bg2.png") no-repeat right bottom;
+    background: #F9F5DD url("/static/images/pattern.jpg") repeat left top;*/
     font-size: 14px;
     font-family: Verdana,​Arial,​Helvetica,​sans-serif;
 }
@@ -13,9 +14,6 @@ body, html, .container-fluid {
 }
 #wrap {
     min-height: 100%;
-}
-.header-title {
-    color: #a67c0a;
 }
 .navbar .navbar-inner {
     background-image: none;
@@ -26,10 +24,9 @@ body, html, .container-fluid {
     min-height: 40px;
     margin: 0 100px;
     padding: 0 30px 0 30px;
-    background-color: #d6c097;
     height: 60px;
-    /*background:  transparent url("/static/images/menu_bg.png") no-repeat left top;*/
-    background0color:  transparent;
+    /*background-color: #d6c097;
+    background:  transparent url("/static/images/menu_bg.png") no-repeat left top;*/
 }
 .navbar .navbar-inner .container1 {
 	background-color: #bba06b;
@@ -80,11 +77,18 @@ input, fieldset, legend {
 .header {
 }
 .header-title {
-    font-size: 40px;
-    font-weight: 700;
+	font-family: 'Playfair Display';
+    color: #A27E4F;
+    border-color: #E6E6E6;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    font-size: 42.728px;
+    font-weight: normal;
+    line-height: 1.1;
+    
     padding: 20px 10px 0 40px;
     position: relative;
-    height: 280px;
+    height: 100px;
 }
 .phone {
     font-size: 24px;
@@ -127,6 +131,15 @@ input, fieldset, legend {
     border: 0 solid #2B1F1F;
     border-radius: 7px;
     background-color: #D6C097;*/
+    font-family: 'Playfair Display';
+    color: #A27E4F;
+    border-color: #E6E6E6;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.1;
+    
     background-color: transparent;
     box-shadow: none;
     color: #996600;
@@ -139,9 +152,15 @@ input, fieldset, legend {
     opacity: 0.7;
 }
 .navbar .nav > li > a {
-    color: #996600;
-    font-size: 18px;
-    font-weight: 700px;
+    font-family: 'Playfair Display';
+    color: #A27E4F;
+    border-color: #E6E6E6;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.1;
+    
     float: none;
     padding: 10px 15px;
     text-decoration: none;
@@ -218,20 +237,18 @@ input, fieldset, legend {
 	padding: 10px 20px;
 }
 .main-container {
-	background-color: #d6c097;
+	background-color: #FFF;
 	/*margin: 20px auto;
-	border-radius: 28px;*/
-	box-shadow: 2px 2px 13px 3px #000000;
+	border-radius: 28px;
+	box-shadow: 2px 2px 13px 3px #000000;*/
 }
 .showcase-block {
-	background-color: #d6c097;/*#F9F5DD*/
-	/*background: #d6c097 url("/static/images/pattern2.png") repeat left top*/
-}
-.showcase-block {
-    min-height: 450px;
+    min-height: 400px;
     /*background: #FFF url("/static/images/roses_white_2.jpg") repeat left top;*/
-    border-radius: 34px;
+    /*border-radius: 34px;
     margin: 20px 50px;
+    background-color: #d6c097;/*#F9F5DD*/
+	/*background: #d6c097 url("/static/images/pattern2.png") repeat left top*/
 }
 .showcase {
     height: 320px;
@@ -331,4 +348,50 @@ body {
 }
 #service-block-second {
 	background: #FFF url("/static/images/beauty_face_h400.jpeg") no-repeat center top;
+}
+.lenta-wrapper {
+	width: 1170px;
+    height: 220px;
+    position: relative;
+}
+.lenta {
+	width: 3500px;
+	position: relative;
+	height: 220px;
+}
+
+.lenta-block {
+	height: 200px;
+	width: 200px;
+	border: 3px solid #CC9933;
+	margin: 0 30px 20px 0;
+	float: left;
+	position: relative;
+}
+.lenta-block-tansparent{
+    background-color: #2B1F1F;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+}
+.lenta-block-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    height: 20px;
+    font-size: 16px;
+    font-style: italic;
+    
+    font-family: 'Playfair Display';
+    color: #A27E4F;
+    border-color: #E6E6E6;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.1;
 }
