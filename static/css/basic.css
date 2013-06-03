@@ -15,6 +15,11 @@ body, html, .container-fluid {
 #wrap {
     min-height: 100%;
 }
+
+.navbar {
+    margin-bottom: 0;
+    overflow: visible;
+}
 .navbar .navbar-inner {
     background-image: none;
     background-repeat: repeat-x;
@@ -244,6 +249,8 @@ input, fieldset, legend {
 }
 .showcase-block {
     min-height: 400px;
+    background: transparent url("/static/images/frame62.png") no-repeat right top;
+    padding: 20px 20px 0 0;
     /*background: #FFF url("/static/images/roses_white_2.jpg") repeat left top;*/
     /*border-radius: 34px;
     margin: 20px 50px;
@@ -351,11 +358,12 @@ body {
 }
 .lenta-wrapper {
 	width: 1170px;
-    height: 220px;
+    height: 200px;
     position: relative;
+    margin: 0 0 40px 0;
 }
 .lenta {
-	width: 3500px;
+	width: 2300px;
 	position: relative;
 	height: 220px;
 }
@@ -394,4 +402,10 @@ body {
     font-size: 16px;
     font-weight: normal;
     line-height: 1.1;
+}
+.separator1 {
+	background: transparent url("/static/images/separator2.png") no-repeat center top;
+	width: 205px;
+	height: 41px;
+	text-align: center;
 }

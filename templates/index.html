@@ -76,13 +76,19 @@
 			</div>
 		</div>
 	</div>
-	<div class='clear'></div>
+	<div class="row-fluid">
+	    <div class="offset5 span1"><div class='separator1'></div></div>
+	    <div class="span6"></div>
+    </div>
     <div class='bottom-slogan'>
          Доверь красоту профессионалу!
     </div>
 <script type="text/javascript">
 	$(function() {
-		$(".makeMeScrollable").smoothDivScroll({});
+		$(".makeMeScrollable").smoothDivScroll({
+			mousewheelScrolling: "allDirections",
+			manualContinuousScrolling: true
+		});
 	});
 </script>
 <script type="text/javascript">
