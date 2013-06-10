@@ -40,15 +40,14 @@
             <div class='container main-container'>
                 {% block header %}
                     <div class='header'>
-                    	<div class='header-title'>
-                    		<img src="{{ STATIC_URL }}images/title61.png"/>
+                    	<div class='navbar-wrapper'>
+                    	{% block navigation %}
+		                    {% load menu_tags %}
+		                    {% show_menu 0 100 100 100 %}
+		                {% endblock %}
+		                </div>
                     		<div class='phone phone-block'>8(965)008-00-88</div>
-                    	</div>
                     </div>
-                {% endblock %}
-                {% block navigation %}
-                    {% load menu_tags %}
-                    {% show_menu 0 100 100 100 %}
                 {% endblock %}
                 {% block base_content %}
                     {% page_attribute "page_title" %}

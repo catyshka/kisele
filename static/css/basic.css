@@ -2,7 +2,7 @@ html, body {
     color: #452A1F;
     min-height: 100%;
     height: 100%;
-    background-color: #FFF;
+    background-color: #fff;
     /*background-color: #E9DC99;
     /*background: #E9DC99 url("/static/images/bg2.png") no-repeat right bottom;
     background: #F9F5DD url("/static/images/pattern.jpg") repeat left top;*/
@@ -27,9 +27,9 @@ body, html, .container-fluid {
     border-radius: 7px;
     box-shadow: none;
     min-height: 40px;
-    margin: 0 100px;
+    margin: 0 150px 0 0;
     padding: 0 30px 0 30px;
-    height: 60px;
+    height: 40px;
     /*background-color: #d6c097;
     background:  transparent url("/static/images/menu_bg.png") no-repeat left top;*/
 }
@@ -80,6 +80,10 @@ input, fieldset, legend {
 }
 
 .header {
+	position: relative;
+	height: 120px;
+	overflow: hidden;
+	margin: 0 0 -35px 0;
 }
 .header-title {
 	font-family: 'Playfair Display';
@@ -105,8 +109,8 @@ input, fieldset, legend {
 }
 .phone-block {
 	position: absolute;
-	right: 0;
-	bottom: 0;
+	right: 140px;
+	top: 10px;
 }
 .clear {
     clear: both;
@@ -196,6 +200,9 @@ input, fieldset, legend {
     color: #A67C0A;;
     /*background: url("/static/images/arrow.png") no-repeat scroll right 1px transparent;*/
 }
+.navbar-inner {
+    background-color: transparent;
+}
 .arrow-block {
     background: url("/static/images/arrow.png") no-repeat scroll right 1px transparent;
     padding: 0 15px 0 0;
@@ -242,24 +249,45 @@ input, fieldset, legend {
 	padding: 10px 20px;
 }
 .main-container {
-	background-color: #FFF;
+	background-color: transparent;
 	/*margin: 20px auto;
 	border-radius: 28px;
 	box-shadow: 2px 2px 13px 3px #000000;*/
 }
-.showcase-block {
-    min-height: 400px;
-    background: transparent url("/static/images/frame62.png") no-repeat right top;
-    padding: 20px 20px 0 0;
+.showcase-block-wrapper {
+    min-height: 540px;
+    height: 540px;
+    background: transparent url("/static/images/showcase_bg4.png") no-repeat center top;
+    padding: 40px 160px;
     /*background: #FFF url("/static/images/roses_white_2.jpg") repeat left top;*/
     /*border-radius: 34px;
     margin: 20px 50px;
     background-color: #d6c097;/*#F9F5DD*/
 	/*background: #d6c097 url("/static/images/pattern2.png") repeat left top*/
 }
+.showcase-block {
+    position: relative;
+    /*background: #FFF url("/static/images/roses_white_2.jpg") repeat left top;*/
+    /*border-radius: 34px;
+    margin: 20px 50px;
+    background-color: #d6c097;/*#F9F5DD*/
+	/*background: #d6c097 url("/static/images/pattern2.png") repeat left top*/
+}
+.showcase-internal-bg {
+	opacity: 0.8;
+	background-color: #fff;
+    height: 320px;
+    width: 1000px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
 .showcase {
     height: 320px;
     overflow: hidden;
+    position: absolute;
+    top: 100px;
+    left: 0;
 }
 .showcase-block .showcase-image {
 	float: left;
