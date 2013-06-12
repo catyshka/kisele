@@ -2,7 +2,8 @@ html, body {
     color: #452A1F;
     min-height: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: #FFF;
+    background: #F9F5DD url("/static/images/bg6.png") repeat left top;
     /*background-color: #E9DC99;
     /*background: #E9DC99 url("/static/images/bg2.png") no-repeat right bottom;
     background: #F9F5DD url("/static/images/pattern.jpg") repeat left top;*/
@@ -11,6 +12,13 @@ html, body {
 }
 body, html, .container-fluid {  
   height: 100%;
+}
+.main-container {
+	background-color: #FFF;
+	/*background-color: #cdad7a;*/
+	margin: 0 auto;
+	/*border-radius: 28px;*/
+	box-shadow: 2px 2px 13px 3px #000000;
 }
 #wrap {
     min-height: 100%;
@@ -100,9 +108,15 @@ input, fieldset, legend {
     height: 100px;
 }
 .phone {
-    font-size: 24px;
-    font-weight: 500;
-    padding: 40px 100px 0 0;
+    font-family: 'Playfair Display';
+    font-size: 28px;
+    font-variant: small-caps;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    line-height: 1.1;
+    text-decoration: none;
+    text-shadow: none;
+    padding: 30px 100px 0 0;
     color: #2B1F1F;
     background: transparent url("/static/images/telefon.png") no-repeat right top;
     height: 70px;
@@ -141,7 +155,7 @@ input, fieldset, legend {
     border-radius: 7px;
     background-color: #D6C097;*/
     font-family: 'Playfair Display';
-    color: #A27E4F;
+    color: #000;
     border-color: #E6E6E6;
     font-variant: small-caps;
     letter-spacing: 0.1em;
@@ -156,13 +170,13 @@ input, fieldset, legend {
     opacity: 1;
 }
 .navbar .nav > li > a:hover, .navbar .nav > li > a:focus {
-    color: #996600;
+    color: #000;
     text-decoration: underline;
     opacity: 0.7;
 }
 .navbar .nav > li > a {
     font-family: 'Playfair Display';
-    color: #A27E4F;
+    color: #000;
     border-color: #E6E6E6;
     font-variant: small-caps;
     letter-spacing: 0.1em;
@@ -197,7 +211,7 @@ input, fieldset, legend {
 }
 .navbar-left .nav-left > .active > a, .navbar-left .nav-left > .active > a:hover, .navbar-left .nav-left > .active > a:focus {
     text-decoration: underline;
-    color: #A67C0A;;
+    color: #000;
     /*background: url("/static/images/arrow.png") no-repeat scroll right 1px transparent;*/
 }
 .navbar-inner {
@@ -248,16 +262,11 @@ input, fieldset, legend {
 	font-size: 150%;
 	padding: 10px 20px;
 }
-.main-container {
-	background-color: transparent;
-	/*margin: 20px auto;
-	border-radius: 28px;
-	box-shadow: 2px 2px 13px 3px #000000;*/
-}
+
 .showcase-block-wrapper {
     min-height: 540px;
     height: 540px;
-    background: transparent url("/static/images/showcase_bg4.png") no-repeat center top;
+    background: transparent url("/static/images/showcase_bg5.png") no-repeat center top;
     padding: 40px 160px;
     /*background: #FFF url("/static/images/roses_white_2.jpg") repeat left top;*/
     /*border-radius: 34px;
