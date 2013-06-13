@@ -122,7 +122,7 @@ input, fieldset, legend {
 }
 .phone-block {
 	position: absolute;
-	right: 140px;
+	right: 150px;
 	top: 10px;
 }
 .clear {
@@ -263,8 +263,8 @@ input, fieldset, legend {
 }
 
 .showcase-block-wrapper {
-    min-height: 530px;
-    height: 530px;
+    min-height: 540px;
+    height: 540px;
     background: transparent url("/static/images/showcase_bg7.png") no-repeat center top;
     padding: 25px 180px;
     /*background: #FFF url("/static/images/roses_white_2.jpg") repeat left top;*/
