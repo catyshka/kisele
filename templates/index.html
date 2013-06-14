@@ -1,6 +1,16 @@
 {% extends "base.html" %}
 {% load cms_tags %}
-
+{% block header %}
+                    <div class='header-index'>
+                    	<div class='navbar-wrapper'>
+                    	{% block navigation %}
+		                    {% load menu_tags %}
+		                    {% show_menu 0 100 100 100 %}
+		                {% endblock %}
+		                </div>
+                    		<div class='phone phone-block'>8(965)008-00-88</div>
+                    </div>
+                {% endblock %}
 {% block base_content %}
 <div class='showcase-block-wrapper'>
     <div class='showcase-block'>
