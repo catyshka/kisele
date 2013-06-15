@@ -263,8 +263,10 @@ input, fieldset, legend {
 	padding: 10px 0 20px 0;
 }
 .article-title {
-	color: #000;
-	font-size: 150%;
+	font-family: 'Playfair Display';
+    font-size: 150%;
+    font-style: italic;
+    color: #CC9933;
 	padding: 10px 20px;
 }
 
@@ -397,8 +399,10 @@ body {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	font-size: 150%;
-	font-style: italic;
+	font-family: 'Playfair Display';
+    font-size: 150%;
+    font-style: italic;
+    color: #452A1F;
 	margin: 0 10px 10px 0;
 }
 #service-block-first {
@@ -473,4 +477,23 @@ body {
 	font-wight: 700;
 	font-style: italic;
 	font-family: 'Playfair Display';
+}
+.services-catalog {
+	margin: 20px 40px;
+}
+.services-catalog-parents-title a {
+	font-family: 'Playfair Display';
+    font-size: 150%;
+    font-style: italic;
+    color: #452A1F;
+    text-decoration: underline;
+}
+.services-catalog-title a {
+	font-family: 'Playfair Display';
+    font-size: 150%;
+    font-style: italic;
+    color: #CC9933;
+}
+.services-catalog-title {
+	margin: 40px 0 20px 10px;
 }

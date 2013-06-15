@@ -134,6 +134,7 @@ CMS_TEMPLATES = (
     ('gallery_catalog.html', 'Gallery Catalog'),
     ('galleryOneColumn.html', 'Gallery One Column'),
     ('services.html', 'Services'),
+    ('services_catalog.html', 'Services Catalog'),
 )
 # GALLERY_TEMPLATES = (
 #     ('djangocms_gallery/default.html', _('default')),

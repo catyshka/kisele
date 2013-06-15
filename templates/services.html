@@ -4,21 +4,32 @@
 {% block base_content %}
 	<br/><br/>
     <div class='row-fluid'>
-        <div class='offset2 span4'>
-	        <div class='service-block' id='service-block-first'>
-	        	<div class='service-block-text'>
-	            	Красота Тела
-	        	</div>
-	    	</div>
-        </div>
-        <div class='span4'>
-            <div class='service-block' id='service-block-second'>
-            	<div class='service-block-text'>
-            		Красота Лица
-            	</div>
-            </div>
-        </div>
-        <div class='offset2'>
-        </div>
-    </div>
+		{% for page in request.current_page.get_children %}
+			{% if forloop.counter == 1 %}
+				 <div class='offset2 span4'>
+			        <div class='service-block' id='service-block-first' data-ref='{% page_url page %}'>
+			        	<div class='service-block-text'>
+			            	{% page_attribute "title" page %}
+			        	</div>
+			    	</div>
+		        </div>
+			{% endif %}
+			{% if forloop.counter == 2 %}
+				<div class='span4'>
+		            <div class='service-block' id='service-block-second' data-ref='{% page_url page %}'>
+		            	<div class='service-block-text'>
+		            		{% page_attribute "title" page %}
+		            	</div>
+		            </div>
+		        </div>
+			{% endif %}
+		{% endfor %}
+		<div class='offset2'>
+	    </div>
+	</div>
+	<script type='text/javascript'>
+		$('.service-block').click(function(){
+			window.location.href = $(this).attr('data-ref');
+		});
+	</script>
 {% endblock %}
