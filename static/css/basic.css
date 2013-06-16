@@ -2,8 +2,9 @@ html, body {
     color: #452A1F;
     min-height: 100%;
     height: 100%;
-    background-color: #FFE4C4;
-    /*background-color: #E9DC99;
+    background-color: FFFFF0;
+    background: #FFFFF0 url("/static/images/bg103.png") repeat left top;
+    /*background-color: #FFE4C4#E9DC99;
     /*background: #E9DC99 url("/static/images/bg2.png") no-repeat right bottom;
     background: #F9F5DD url("/static/images/bg6.png") repeat left top;*/
     font-size: 14px;
@@ -16,8 +17,12 @@ body, html, .container-fluid {
 	background-color: #FFFFF0;
 	/*background-color: #cdad7a;*/
 	margin: 0 auto;
+	border-top: 0 solid #000000;
+	border-bottom: 0 solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
 	/*border-radius: 28px;*/
-	box-shadow: 2px 2px 13px 3px #000000;
+	/*box-shadow: 2px 2px 13px 3px #000000;*/
 }
 #wrap {
     min-height: 100%;
@@ -136,11 +141,13 @@ input, fieldset, legend {
 .plain-gallery .image-block {
     float: left;
     padding: 10px;
+    border: 3px solid #CC9933;
+	padding: 5px;
+	margin: 0 10px 20px 0 ;    
 }
 .plain-gallery-photo {
     height: 100px;
     width: 250px;
-    border: 3px solid #CC9933;
 }
 .plain-gallery {
     background-color: transparent;
@@ -308,6 +315,8 @@ input, fieldset, legend {
 .showcase-block .showcase-image {
 	float: left;
 	margin: 15px 20px;
+	border: 3px solid #CC9933;
+	padding: 5px;
 }
 .showcase-block .showcase-text {
 	padding: 15px 20px;
