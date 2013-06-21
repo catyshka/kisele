@@ -2,9 +2,9 @@ html, body {
     color: #452A1F;
     min-height: 100%;
     height: 100%;
-    background-color: FFFFF0;
-    background: #FFFFF0 url("/static/images/bg103.png") repeat left top;
-    /*background-color: #FFE4C4#E9DC99;
+    background-color: FFFFFF;
+    /*background: #FFFFF0 url("/static/images/bg103.png") repeat left top;
+    background-color: #FFE4C4#E9DC99;
     /*background: #E9DC99 url("/static/images/bg2.png") no-repeat right bottom;
     background: #F9F5DD url("/static/images/bg6.png") repeat left top;*/
     font-size: 14px;
