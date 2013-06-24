@@ -2,8 +2,23 @@
 {% load cms_tags menu_tags templatetags %}
 
 {% block left_bar %}
-    {% load menu_tags %}
-    {% show_menu_below_id "gallery_catalog" 0 100 100 100 "menu/left_menu.html" %}
+    <div class='navbar-left'>
+    	<div class="navbar-left-inner">
+            <ul class="nav-left">
+		    {% for page in request.current_page.get_children %}
+		        {% if page.published %}
+		        	<li>
+		        		{% if request.current_page == page%}
+		        			{% page_attribute "title" page %}
+		        		{% else %}
+		        			<a href="{% page_url page %}">{% page_attribute "title" page %}</a>
+		        		{% endif %}
+		        	</li>
+		        {% endif%}
+		    {% endfor %}
+    		</ul>
+    	</div>
+    </div>
 {% endblock %}
 {% block main_bar %}
 	<script type="text/javascript">

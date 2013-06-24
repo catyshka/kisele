@@ -211,15 +211,26 @@ input, fieldset, legend {
     list-style: none;
     margin: 0 0 10px 0;
 }
-.navbar-left .nav-left > li > a{
-    font-size: 18px;
-    font-weight: 700px;
+.navbar-left .nav-left > li{
     float: none;
     padding: 5px 5px;
-    text-decoration: none;
-    text-shadow: none;
-    color: #000;
     display: block;
+    font-family: 'Playfair Display';
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+    color: #CC9933;
+    text-decoration: none;
+}
+.navbar-left .nav-left > li > a{
+    float: none;
+    display: block;
+    font-family: 'Playfair Display';
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+    color: #452A1F;
+    text-decoration: underline;
 }
 .navbar-left .nav-left > .active > a, .navbar-left .nav-left > .active > a:hover, .navbar-left .nav-left > .active > a:focus {
     text-decoration: underline;
@@ -274,7 +285,7 @@ input, fieldset, legend {
     font-size: 150%;
     font-style: italic;
     color: #CC9933;
-	padding: 10px 20px;
+	padding: 0 20px 10px 20px;
 }
 
 .showcase-block-wrapper {
@@ -492,10 +503,16 @@ body {
 }
 .services-catalog-parents-title a {
 	font-family: 'Playfair Display';
-    font-size: 150%;
+    font-size: 80%;
     font-style: italic;
     color: #452A1F;
     text-decoration: underline;
+}
+.services-catalog-parents-title {
+	font-family: 'Playfair Display';
+    font-size: 150%;
+    font-style: italic;
+    color: #CC9933;
 }
 .services-catalog-title a {
 	font-family: 'Playfair Display';

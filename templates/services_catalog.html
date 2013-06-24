@@ -5,23 +5,23 @@
 	<br/><br/>
 	<div class='row-fluid'>
 		{% for page in request.current_page.parent.get_children %}
-			{% if forloop.counter == 1 %}
-				 <div class='offset2 span4'>
+			{% if request.current_page == page %}
+				 <div class='offset4 span2'>
 				 	<div class='services-catalog-parents-title'>
-			        	 <a href='{% page_url page %}'><<&nbsp;{% page_attribute "title" page %}</a>
-			        </div>
-		        </div>
-			{% endif %}
-			{% if forloop.counter == 2 %}
-				<div class='span4'>
-		            <div class='services-catalog-parents-title'>
-			        	 <a href='{% page_url page %}'>{% page_attribute "title" page %}&nbsp;>></a>
+					 		{% page_attribute "title" page %}
 			        </div>
 		        </div>
 			{% endif %}
 		{% endfor %}
-		<div class='offset2'>
-	    </div>
+		{% for page in request.current_page.parent.get_children %}
+			{% if request.current_page != page %}
+				<div class='offset3 span3'>
+		            <div class='services-catalog-parents-title'>
+			        	     <a href='{% page_url page %}'>{% page_attribute "title" page %}&nbsp;>></a>
+			        </div>
+		        </div>
+			{% endif %}
+		{% endfor %}
 	</div>
     <div class='services-catalog'>
 		{% for page in request.current_page.get_children %}

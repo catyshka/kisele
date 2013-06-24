@@ -2,10 +2,40 @@
 {% load cms_tags menu_tags templatetags %}
 
 {% block left_bar %}
-    {% load menu_tags %}
-    {% show_menu_below_id "articles" 0 100 100 100 "menu/left_menu.html" %}
+	<div class='navbar-left'>
+    	<div class="navbar-left-inner">
+            <ul class="nav-left">
+		    {% for page in request.current_page.parent.get_children %}
+		        {% if page.published %}
+		        	<li>
+		        		{% if request.current_page == page%}
+		        			{% page_attribute "title" page %}
+		        		{% else %}
+		        			<a href="{% page_url page %}">{% page_attribute "title" page %}</a>
+		        		{% endif %}
+		        	</li>
+		        {% endif%}
+		    {% endfor %}
+    		</ul>
+    	</div>
+    </div>
 {% endblock %}
 {% block main_bar %}
+	<br/><br/>
+	<div class='row-fluid'>
+		<div class='offset4 span4'></div>
+		{% for page in request.current_page.parent.parent.get_children %}
+			{% if request.current_page.parent != page %}
+				<div class='span4'>
+		            <div class='services-catalog-parents-title'>
+		            	{% if request.current_page.parent != page %}
+			        	     <a href='{% page_url page %}'>{% page_attribute "title" page %}&nbsp;>></a>
+			        	{% endif %}
+			        </div>
+		        </div>
+			{% endif %}
+		{% endfor %}
+	</div>
 	{% if request.current_page.parent_id %}
     	<div class="article-title">{% page_attribute "page_title" %}</div>
     {% endif %}
