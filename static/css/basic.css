@@ -503,14 +503,14 @@ body {
 }
 .services-catalog-parents-title a {
 	font-family: 'Playfair Display';
-    font-size: 80%;
+    font-size: 60%;
     font-style: italic;
     color: #452A1F;
     text-decoration: underline;
 }
 .services-catalog-parents-title {
 	font-family: 'Playfair Display';
-    font-size: 150%;
+    font-size: 200%;
     font-style: italic;
     color: #CC9933;
 }
@@ -522,4 +522,12 @@ body {
 }
 .services-catalog-title {
 	margin: 40px 0 20px 10px;
+}
+.service-catalog-text a {
+	text-decoration: none;
+	color: #452A1F;
+}
+.service-catalog-text a:hover {
+	text-decoration: underline;
+}
 }

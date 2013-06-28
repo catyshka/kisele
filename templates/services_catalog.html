@@ -6,16 +6,16 @@
 	<div class='row-fluid'>
 		{% for page in request.current_page.parent.get_children %}
 			{% if request.current_page == page %}
-				 <div class='offset4 span2'>
+				 <div class='offset4 span3'>
 				 	<div class='services-catalog-parents-title'>
-					 		{% page_attribute "title" page %}
+					 		-&nbsp;{% page_attribute "title" page %}&nbsp;-
 			        </div>
 		        </div>
 			{% endif %}
 		{% endfor %}
 		{% for page in request.current_page.parent.get_children %}
 			{% if request.current_page != page %}
-				<div class='offset3 span3'>
+				<div class='offset2 span3'>
 		            <div class='services-catalog-parents-title'>
 			        	     <a href='{% page_url page %}'>{% page_attribute "title" page %}&nbsp;>></a>
 			        </div>
@@ -30,7 +30,9 @@
 			        <a href='{% page_url page %}'>{% page_attribute "title" page %}</a>
 			    </div>
 			    <div class='service-catalog-text'>
+			    	<a href="{% page_url page%}">
 			    	{% get_page_content "content" page.id None None 300 %}...
+			    	</a>
 			    </div>
 			</div>
 		{% endfor %}
