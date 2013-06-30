@@ -36,9 +36,7 @@
 			{% endif %}
 		{% endfor %}
 	</div>
-	{% if request.current_page.parent_id %}
-    	<div class="article-title">{% page_attribute "page_title" %}</div>
-    {% endif %}
+    <div class="article-title">{% page_attribute "page_title" %}</div>
     <div class='article-text'>
     	{% placeholder content %}
     </div>

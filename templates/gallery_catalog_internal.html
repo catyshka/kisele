@@ -26,21 +26,16 @@
 		$('.jwGallery').galleryView();
 	});
 	</script>
-	{% if request.current_page.parent_id %}
-    	<div class="gallery-title">{% page_attribute "page_title" %}</div>
-    {% endif %}
-    {% for page1 in request.current_page.get_children %}
-	    {% if page1.published %}
-	    	<div class="gallery-item">
-		        <div class="gallery-item-title">
-		            <a href="{% page_url page1 %}">
-		                {% page_attribute "title" page1 %}
-		            </a>
-		        </div>
-		     </div>
-		    {% for page in page1.get_children %}
-		        {% show_placeholder "gallery_content" page.id None None %}
-		    {% endfor %}
-	    {% endif %}
+    {% for page in request.current_page.get_children %}
+        {% if page.published %}
+            <div class="gallery-item">
+                <div class="gallery-item-title">
+                	<a href="{% page_url page %}">
+                		{% page_attribute "title" page %}
+                	</a>
+                </div>
+                {% show_placeholder "gallery_content" page.id None None %}
+            </div>
+        {% endif%}
     {% endfor %}
 {% endblock %}

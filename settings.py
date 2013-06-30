@@ -132,6 +132,7 @@ CMS_TEMPLATES = (
     ('gallery.html', 'Gallery'),
     ('articles.html', 'Articles'),
     ('gallery_catalog.html', 'Gallery Catalog'),
+    ('gallery_catalog_internal.html', 'Gallery Catalog Internal'),
     ('galleryOneColumn.html', 'Gallery One Column'),
     ('services.html', 'Services'),
     ('services_catalog.html', 'Services Catalog'),
